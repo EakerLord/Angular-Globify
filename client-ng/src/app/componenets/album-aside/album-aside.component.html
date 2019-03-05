@@ -1,0 +1,9 @@
+<div class="header">
+  <h1>Álbumes</h1>
+</div>
+<div *ngIf="albums.length > 0">
+  <gl-album *ngFor="let album of albums" [album]="album"></gl-album>
+</div>
+<div *ngIf="albums.length == 0">
+  <h4>No hay albumes para mostrar.</h4>
+</div>

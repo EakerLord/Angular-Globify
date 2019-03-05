@@ -1,0 +1,31 @@
+<div id="content">
+  <!-- <div id="loading" class="loading">
+    <i class="material-icons">donut_large</i>
+  </div> -->
+  <nav class="desktop-nav open" id="menu">
+    <gl-navbar></gl-navbar>
+  </nav>
+  <div class="slide-toogle-btn" id="arrow" (click)="ocultarMostrar()">
+    <i class="material-icons">keyboard_arrow_left</i>
+  </div>
+  <section class="artists" id="artist">
+    <div class="header">
+      <div class="search-nav">
+        <div class="gl-logo">
+          <img src="../assets/img/globalLogic-logo-white.png" alt="GL-logo">
+        </div>
+        <gl-search></gl-search>
+      </div>
+      <h1>Artistas</h1>
+    </div>
+    <div class="artists">
+      <div class="grid">
+        <gl-artist></gl-artist>
+      </div>
+    </div>
+    <gl-player></gl-player>
+  </section>
+  <section class="albums">
+    <gl-album-aside></gl-album-aside>
+  </section>
+</div>

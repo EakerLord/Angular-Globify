@@ -1,0 +1,100 @@
+:host {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  #content {
+    width: 100%;
+    display: flex;
+    //display: none;
+  }
+  .desktop-nav {
+    position: relative;
+    width: 0;
+    max-width: 200px;
+    height: 100%;
+    background-color: #1A1A1A;
+    color: #CCC;
+
+    &.open {
+      width: 100%;
+    }
+  }
+  .slide-toogle-btn {
+    transition: width .5s ease-in-out;
+    position: relative;
+    z-index: 2;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 20px;
+
+    @media (max-width: 412px) {
+      display: none !important;
+    }
+
+    &:hover {
+      background-color: #444;
+      cursor: pointer;
+    }
+
+    i {
+      color: #F37037;
+      font-size: 27px;
+      margin-left: -4px;
+    }
+  }
+  section.artists {
+    transition: width .5s ease-in-out;
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    background-color: #262626;
+
+    .search-nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: absolute
+    }
+    .gl-logo {
+      width: 30%;
+      float: left;
+
+      img {
+        width: 190px;
+      }
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      overflow-y: scroll;
+      height: 45vh;
+      padding: 0 30px;
+    }
+  }
+  .scroll {
+    overflow-y: scroll;
+    height: 72vh;
+  }
+  .header {
+    width: 100%;
+    display: inline-block;
+    height: 28vh;
+    position: relative;
+  }
+  .artists {
+    height: 65%;
+  }
+  .albums {
+		width: 35%;
+		display: inline-block;
+    background-color: #333333;
+    overflow-y: scroll;
+	}
+}

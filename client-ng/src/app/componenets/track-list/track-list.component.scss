@@ -1,0 +1,23 @@
+.song-list {
+  padding: 10px 40px;
+  color: #CCC;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px 0;
+
+    &.active {
+      color: #F37037;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+}
+

@@ -1,0 +1,8 @@
+<div class="album-item" data-id="{{album.id}}"> <!-- data-name="{{album.name}}" -->
+  <div class="album-info">
+    <i class="fas fa-caret-right"></i>
+    <img src="{{album.image}}" alt="album-thumbnail" width="27">
+    <span (click)="ocultarTracks()">{{album.name}}</span>
+  </div>
+  <gl-track-list *ngIf="mostrarTracks"></gl-track-list>
+</div>

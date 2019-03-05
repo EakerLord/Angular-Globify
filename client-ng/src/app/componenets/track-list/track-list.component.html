@@ -1,0 +1,10 @@
+<ul class="song-list" id="song-list">
+  <li id="track" *ngFor="let track of tracks">
+    <div>
+      <i class="material-icons play-btn">play_arrow</i>
+      <span>{{track.name}}</span>
+    </div>
+    <!-- <span>{{track.duration}}</span> -->
+    <span>{{trackTime(track.duration)}}</span>
+  </li>
+</ul>

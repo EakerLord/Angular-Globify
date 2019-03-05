@@ -1,0 +1,9 @@
+<div *ngIf="artists.length > 0">
+  <div class="artist-box" id="{{artist.id}}" *ngFor="let artist of artists">
+    <img class="img-artist" src="{{artist.image}}" alt="">
+    <h4 class="artist-title-box">{{this.artist.name}}</h4>
+  </div>
+</div>
+<div *ngIf="artists.length == 0">
+  <h4>No hay artistas para mostrar.</h4>
+</div>
